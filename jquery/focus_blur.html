@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>focus</title>
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<script>
+    $(document).ready(
+        function () {
+            $("input").focus(function () {
+                $(this).css("background-color","red");
+            });
+            $("input").blur(function () {
+                $("this").css("background-color","#ffffff");
+            });
+        }
+    );
+</script>
+Name: <input type="text" name="fullname"><br>
+Email: <input type="text" name="email">
+</body>
+</html>
