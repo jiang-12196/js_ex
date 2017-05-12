@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜鸟教程</title>
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(
+            function () {
+                $("button").on("click",function () {
+                    var version = $().jquery;
+                    alert("你现在运行的jquery版本为："+version);
+                })
+            }
+        )
+    </script>
+</head>
+<body>
+<button>点</button>
+</body>
+</html>
