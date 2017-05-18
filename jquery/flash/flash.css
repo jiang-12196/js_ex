@@ -1,0 +1,36 @@
+body {
+    background: #ccc;
+}
+
+p {
+    height: 900px;
+}
+
+p:nth-child(odd) {
+    background: yellowgreen;
+}
+
+p:nth-child(even) {
+    background: red;
+}
+
+.anim-start {
+    -webkit-transform: translateY(400px) translateX(0);
+    -moz-transform: translateY(400px) translateX(0);
+    transform: translateY(400px) translateX(0);
+    opacity: 1;
+}
+
+.anim-end {
+    -webkit-transform: translateY(0) translateX(0);
+    -moz-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+}
+
+.anim-go {
+    -webkit-transition: transform .8s, opacity .8s;
+    -moz-transition: transform .8s, opacity .8s;
+    transition: transform .8s, opacity .8s;
+    opacity: 1;
+}

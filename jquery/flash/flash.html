@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>磁性相吸</title>
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="./flash.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <p class="anim-start"></p>
+    <p class="anim-start"></p>
+    <p class="anim-start"></p>
+    <p class="anim-start"></p>
+    <p class="anim-start"></p>
+    <p class="anim-start"></p>
+    <p class="anim-start"></p>
+    <p class="anim-start"></p>
+    <p class="anim-start"></p>
+    <p class="anim-start"></p>
+    <p class="anim-start"></p>
+    <p class="anim-start"></p>
+    <p class="anim-start"></p>
+    <p class="anim-start"></p>
+</div>
+</body>
+</html>
+<script>
+    roll($('p'));
+    $(window).scroll(function () {
+        roll($('p'));
+    });
+    function roll(obj) {
+        var win_height = $(window).height();
+        var scroll_top = $(window).scrollTop();
+        console.log(win_height);
+        console.log(scroll_top);
+        obj.each(function (i) {
+            var obj_top = obj.eq(i).offset().top;
+            if((scroll_top + win_height ) > obj_top) {
+                obj.eq(i).addClass("anim-go anim-end")
+            }
+        })
+    }
+</script>
