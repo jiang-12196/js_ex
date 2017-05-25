@@ -21,7 +21,8 @@ function bubbleSort(array) {
     }
 }
 
-var myarray = [4,2,5,2,1,4,7,8]
 
-bubbleSort(myarray);
-console.log(myarray);
+var bubbleArray = [4,2,5,2,1,4,7,8]
+
+bubbleSort(bubbleArray);
+console.log("bubbleArray-->",bubbleArray);
