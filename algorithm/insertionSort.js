@@ -2,11 +2,15 @@ function insertionSort(array) {
     var len = array.length, value, i, j;
     for (i=0;i<len;i++) {
         value = array[i];
+        console.log("i-->",i);
         for (j=i-1; j>-1 && array[j]>value;j--){
-            array[j+1] = array[j]
+            console.log("j-->",j);
+
+            array[j+1] = array[j];
+            console.log('array-->',array)
+
         }
-        array[j+1] = value
-        console.log('array-->',array)
+        array[j+1] = value;
 
     }
     
