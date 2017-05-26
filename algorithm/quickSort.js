@@ -32,18 +32,12 @@ function quickSort(array, left, right) {
     right = (typeof right !== "number" ? array.length - 1 : right);
     
     var index = partition(array, left, right);
-    console.log("index--->",index);
-    console.log("index 111 array", array);
     if (left < index-1) {
-        console.log("left first")
         quickSort(array, left, index-1);
-        console.log("array-le->",array)
     }
     
     if (index< right) {
-        console.log("right first")
         quickSort(array, index, right)
-        console.log("array-rig->",array)
     }
     
     return array;
