@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>template</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../../githup/artTemplate/dist/template.js"></script>
+
+    <link href="boots_transition.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="myvessel">
+    </div>
+
+</body>
+</html>
+<script id="test" type="text/html">
+{{each list as value i}}
+    <div class="item col-xs-12 col-sm-6 col-md-4">
+        <a href="#">
+            <div class="mask"></div>
+            <img src="{{value['img']}}" alt=""/>
+        </a>
+        <div class="title">{{value['title']}}</div>
+        <div class="detail">{{value['detail']}}</div>
+    </div>
+    {{/each}}
+</script>
+<script>
+    var arr = [];
+    var obj = {img: 'ruanyf.png',title:'阮一峰',detail:'前端界大神'};
+    for (var i =0; i< 12; i++){
+        arr.push(obj);
+    }
+
+    var html = template('test', {list: arr});
+    $('.myvessel').html(html)
+</script>
