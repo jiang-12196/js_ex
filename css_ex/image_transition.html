@@ -4,7 +4,45 @@
     <meta charset="UTF-8">
     <title>image</title>
     <style>
-
+        body {
+            background: #ccc;
+        }
+        .item {
+            width: 600px;
+            height: 290px;
+            margin: 0 auto;
+            margin-top: 50px;
+            overflow: hidden;
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            color: #000;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        a img {
+            width: 600px;
+            height: 200px;
+            border: none;
+            z-index: 1;
+        }
+        a .mask {
+            position: absolute;
+            top: 0;
+            right: 100%;
+            opacity: 0;
+            z-index: 3;
+            background: blueviolet;
+            transition: all 0.5s;
+        }
+        a:hover .mask{
+            right: 0;
+            opacity: 0.8;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
