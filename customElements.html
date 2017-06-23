@@ -13,9 +13,21 @@
 </head>
 <body>
     <greeting>hello world</greeting>
+    <my-element content="Custome Element">
+        great...
+    </my-element>
 </body>
 </html>
 <script>
+    class MyElement extends HTMLElement {
+        get content() {
+            return this.getAttribute('content')
+        }
+        set content(val){
+            this.setAttribute('content', val);
+        }
+    }
+    window.customElements.define('my-element', MyElement);
     function customTag(tagName, fn) {
         Array.from(document.getElementsByTagName(tagName))
             .forEach((fn))
@@ -23,5 +35,9 @@
     function greetingHandler(element) {
         element.innerHTML = 'hello, jiang'
     }
+    function myElementHandler(element) {
+        element.textContent = element.content();
+    }
     customTag('greeting', greetingHandler);
+    customTag('my-element', myElementHandler);
 </script>
