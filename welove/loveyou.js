@@ -6,7 +6,7 @@ colors = ['#F83538', '#FF4400','#19E5DE', '#1CF49A', '#ED5BF7', '#F9F649', '#54E
 
 function setText() {
     if (localStorage) {
-        $text.text(localStorage.getItem('text') || 'ILoveYou');
+        $text.text(localStorage.getItem('text') || '蒋寒是个帅哥');
     }
 }
 
@@ -19,19 +19,19 @@ function setColor() {
 fontSize = 0;
 function adjustFontSize() {
     var minFontSize = 100;
-    var maxfontSize = window.innerHeight - 40;
-    fontSize = maxfontSize;
+    var maxFontSize = window.innerHeight - 40;
+    fontSize = maxFontSize;
     $text.css('font-size', fontSize);
-    if($text.text().length < 2) return;
+    if ($text.text().length < 2) return;
     var innerWidth = window.innerWidth;
-    var timer = setInterval(function () {
-        if($text.width()>innerWidth){
+    var timer = setInterval(function() {
+        if ($text.width() > innerWidth) {
             fontSize -= 10;
             $text.css('font-size', fontSize);
         } else {
-          clearInterval(timer)
+            clearInterval(timer);
         }
-    }, 10)
+    }, 10);
 }
 
 
@@ -61,7 +61,7 @@ $text.on('keydown', function (e) {
         }, 10);
     } else {
         var timer = setInterval(function () {
-            if ($text.width()>innerWidth){
+            if ($text.width() > innerWidth){
                 fontSize -= 10;
                 $text.css('font-size', fontSize);
             } else {
@@ -69,24 +69,25 @@ $text.on('keydown', function (e) {
             }
         }, 10)
     }
-}).on('keyup', function () {
+}).on('keyup', function (e) {
     if(localStorage) localStorage.setItem('text',$text.text());
 });
 
-$(window).on(navigator.standalone ? 'orientationachange' : 'resize', function () {
+$(window).on(navigator.standalone ? 'orientationchange' : 'resize', function() {
     adjustFontSize();
-}).on('shake', function () {
-    color = colors[Math.floor(Math.random()*colors.length)];
-    if(localStorage) localStorage.setItem('color',color);
+}).on('shake', function() {
+    color = colors[Math.floor(Math.random() * colors.length)];
+    if (localStorage) localStorage.setItem('color', color);
     setColor();
 });
 
 degree = 0;
 $flipper.css('-webkit-transform', 0);
-$container.on('swiperight', function () {
+$container.on('swiperight', function() {
     degree += 180;
     $flipper.css('-webkit-transform', 'rotateY('+ degree +'deg)');
 }).on('swipeleft', function () {
+    degree -= 180;
     $flipper.css('-webkit-transform', 'rotateY(' + degree +'deg)');
 });
 
