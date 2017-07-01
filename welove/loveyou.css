@@ -1,20 +1,26 @@
-* { margin: 0; }
+* {
+    margin: 0;
+}
+
 body {
     -webkit-text-size-adjust: none;
     font-family: Baskerville, Helvetica, Arial, sans-serif;
 }
+
 #container {
     width: 100%;
     height: 100%;
     position: fixed;
     -webkit-perspective: 1000;
 }
+
 #flipper {
     width: 100%;
     height: 100%;
     -webkit-transition: 0.5s;
     -webkit-transform-style: preserve-3d;
 }
+
 #main {
     display: table;
     background: #333;
@@ -22,6 +28,7 @@ body {
     position: relative;
     -webkit-transform: rotateY(0deg);
 }
+
 #text {
     margin: 0;
     color: #19e5de;
@@ -30,6 +37,7 @@ body {
     display: table-cell;
     vertical-align: middle;
 }
+
 #about {
     color: #333;
     background: #f8f8f8;
@@ -44,27 +52,33 @@ body {
     position: absolute;
     -webkit-backface-visibility: hidden;
 }
+
 .header {
-    margin: 15px 0 5px 0;
+    margin: 15px 0 5px;
     font-size: 30px;
     text-align: center;
 }
+
 .world {
     text-align: center;
     margin-bottom: 20px;
     text-decoration: underline;
 }
+
 .footer {
     margin-top: 30px;
     text-align: center;
 }
+
 .footer p {
     margin: 5px 0;
 }
+
 a {
-    color: #08c;
+    color: #0088cc;
     text-decoration: none;
 }
+
 #qrcode {
     width: 280px;
     margin: auto;
