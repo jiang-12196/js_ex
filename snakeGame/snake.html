@@ -2,9 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>贪吃蛇</title>
+    <link rel="stylesheet" type="text/css" href="snake.css"/>
 </head>
 <body>
-$END$
+<div class="container">
+    <h1>贪吃蛇游戏</h1>
+    <div>得分：<span id="score">0</span></div>
+    <button id="start">开始</button>
+    <button id="pause">暂停</button>
+    <div id="map"></div>
+</div>
 </body>
+
 </html>
+<script type="text/javascript" src="snake.js"></script>
+<!--<script>-->
+    <!--var map = document.getElementById('map');-->
+    <!--var rowNum = 25;-->
+    <!--var colNum = 20;-->
+    <!--var mapWidth = colNum*20+'px';-->
+    <!--var mapHeight = rowNum*20+'px';-->
+    <!--map.style.width = mapWidth;-->
+    <!--map.style.height = mapHeight;-->
+
+    <!--var arr = [];-->
+    <!--for(var i=0; i<rowNum; i++){-->
+        <!--var rowDiv = document.createElement('div');-->
+        <!--rowDiv.className = 'row';-->
+        <!--map.appendChild(rowDiv);-->
+        <!--var rowArray = [];-->
+        <!--for (var j=0; i<colNum; j++) {-->
+            <!--var colDiv = document.createElement('div');-->
+            <!--colDiv.className = 'col';-->
+            <!--rowDiv.appendChild(colDiv);-->
+            <!--rowArray.push(colDiv);-->
+        <!--}-->
+        <!--arr.push(rowArray);-->
+    <!--}-->
+
+<!--</script>-->
