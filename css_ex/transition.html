@@ -7,15 +7,29 @@
         div {
             width: 100px;
             height: 100px;
-            background: blue;
-            transition: all 1s;
+            background: darkorange;
+            /*transition: height 1s, width 1s 1s;*/
+            transition: 1s height cubic-bezier(.83,.97,.05,1.44);
         }
         div:hover {
             width: 300px;
+            height: 500px;
+        }
+        .tran {
+            background-color: rebeccapurple;
+        }
+        .tran:hover {
+            animation: 1s trans 3 normal;
+        }
+        @keyframes trans {
+            0% { background: rebeccapurple; }
+            50% { background: red; }
+            100% { background: black; }
         }
     </style>
 </head>
 <body>
 <div></div>
+<div class="tran"/>
 </body>
 </html>

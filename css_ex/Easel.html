@@ -7,6 +7,7 @@
 </head>
 <body onload="init();">
     <canvas id="demoCanvas" width="500" height="300"></canvas>
+    <canvas id="canvas" width="500" height="300"></canvas>
 </body>
 <script>
     function init() {
@@ -16,6 +17,13 @@
         circle.x = 100;
         circle.y = 100;
         stage.addChild(circle);
+        stage.update();
+
+        var canvas = document.querySelector('#canvas');
+        var stage = new createjs.Stage(canvas);
+        var rect = new createjs.Shape();
+        rect.graphics.beginFill("#f00").drawRect(0, 0, 100, 100);
+        stage.addChild(rect);
         stage.update();
     }
 </script>
