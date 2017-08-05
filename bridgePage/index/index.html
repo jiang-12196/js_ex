@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit">
+
+    <title>首页</title>
+    <link rel="stylesheet" href="../Public/css/jquery.fullPage.css">
+    <link rel="stylesheet" href="../Public/css/default.css" />
+    <link rel="stylesheet" href="../Public/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../Public/css/b_style.css"/>
+    <script src="../Public/js/jQuery.js"></script>
+    <script src="../Public/js/jquery-ui-1.10.3.min.js"></script>
+    <script src="../Public/js/jquery.fullPage.min.js"></script>
+    <script src="../Public/js/public.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.fn.fullpage({
+                slidesColor: ['', '', ''],
+                anchors: ['page1', 'page2', 'page3'],
+                navigation: true
+            });
+            $('.arrow_next').click(function(){
+                $.fn.fullpage.moveSectionDown();
+            });
+        });
+    </script>
+
+</head>
+<body>
+<!--第一屏-->
+<div class="section">
+    <!--header-->
+    <div class="headerWrap clearfix">
+        <div class="header">
+            <a href="/" class="logo"><img src="../Picture/57fdf4f7bdd4f.png"></a>
+            <ul>
+                <li><a href="./index.html" class="cur">首页</a></li>
+                <li class="w120 navBtn">
+                    <a href="./whiteboard.html" class="nava">方案产品<span></span></a>
+                    <div class="subnav">
+                        <a href="./whiteboard.html">电子白板</a>
+                        <a href="./signage.html">数字标牌</a>
+                        <a href="./fota.html">FOTA</a>
+                        <a href="./IVI.html">车联网</a>
+                    </div>
+                </li>
+                <!-- <li><a href="./productScheme.html">方案产品</a></li> -->
+                <li><a href="./newsList.html">新闻动态</a></li>
+                <li><a href="./about.html">关于我们</a></li>
+                <li><a href="./joinUs.html">加入我们</a></li>
+                <li><a href="./contact.html">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="first">
+        <a href="javascript:;" class="firstBtn btnPrev"></a>
+        <a href="javascript:;" class="firstBtn btnNext"></a>
+        <div class="first-wp">
+            <div class="first-item on first-item1" style="background:url(../Picture/5808624644cda.jpg) no-repeat;background-size: 100% 100%;">
+                <div class="first_con textStyle1" >
+                    <h2>步锐捷是一家领先的移动互联网技术方案提供商，<br>针对中国智能设备市场推出移动智能终端和云端的全方位解决方案，<br>其中包括数字标牌、电子白板、FOTA等。</h2>
+                    <p></p>
+                    <!--  -->
+                    <a class="arrow_next" href="#"><img src="../Public/img/ind_jt_icon.png"></a>
+                </div>
+            </div><div class="first-item on first-item2" style="background:url(../Picture/592fdf3d30b52.jpg) no-repeat;background-size: 100% 100%;">
+            <div class="first_con textStyle2" >
+                <h2>Aten数字标牌管理系统</h2>
+                <p>集中控制、统一管理，随时随地发布广告内容</p>
+                <!-- <a class="link_btn" href="#">点击试用</a> -->
+                <a class="arrow_next" href="#"><img src="../Public/img/ind_jt_icon.png"></a>
+            </div>
+        </div><div class="first-item on first-item3" style="background:url(../Picture/592fdf67ddc6f.jpg) no-repeat;background-size: 100% 100%;">
+            <div class="first_con textStyle3" >
+                <h2>电子白板软件</h2>
+                <p>强大绘图功能、云端存储课件、远程无线控制<br />
+                    提供便捷教学体验</p>
+                <!-- <a class="link_btn" href="#">点击试用</a> -->
+                <a class="arrow_next" href="#"><img src="../Public/img/ind_jt_icon.png"></a>
+            </div>
+        </div>			</div>
+    </div>
+</div>
+<!--第二屏-->
+<div class="section">
+    <div class="second" id="second">
+        <div class="second_top">
+            <h2 class="tit_h">移动互联网和云端解决方案</h2>
+            <p class="tit_p">公司自成立以来，完成多个移动互联网和云端相关的项目，积累了丰富的行业经验</p>
+            <span class="tit_s">公司的移动互联网解决方案包括</span>
+        </div>
+        <div class="second_con">
+            <div class="product-items">
+                <div class="product-item" onclick="window.location.href='./whiteboard.html';" style="cursor:pointer;">
+
+
+                    <div class="product-item-front">
+                        <img src="../Picture/thumb_518_0_594a2a1651287.jpg">
+                        <p>电子白板</p>
+                    </div>
+                    <div class="product-item-opposite">
+                        <h2>电子白板</h2>
+                        <p>借助强大的编辑以及云存储功能，客户可以畅怀书写并且可以随时随地编辑内容、存储到云端甚至提前发送至白板终端。</p>
+                        <a href="./whiteboard.html">查看详细</a>
+
+
+                    </div>
+                </div>						  <div class="product-item" onclick="window.location.href='./signage.html';" style="cursor:pointer;">
+
+
+                <div class="product-item-front">
+                    <img src="../Picture/thumb_518_0_594c784642046.jpg">
+                    <p>数字标牌</p>
+                </div>
+                <div class="product-item-opposite">
+                    <h2>数字标牌</h2>
+                    <p>借助优秀的Aten数字标牌内容发布、设备管理系统，客户可以轻松的管理广告机、数字班牌甚至任何智能移动终端。</p>
+                    <a href="./signage.html">查看详细</a>
+
+
+                </div>
+            </div>						  <div class="product-item" onclick="window.location.href='./fota.html';" style="cursor:pointer;">
+
+
+                <div class="product-item-front">
+                    <img src="../Picture/thumb_518_0_594a174a59e9c.jpg">
+                    <p>空中升级</p>
+                </div>
+                <div class="product-item-opposite">
+                    <h2>空中升级</h2>
+                    <p>步锐捷为客户提供先进的空中固件升级方案（FOTA）。从共有云到私有云，任何Android设备均能轻松接入我们的服务。</p>
+                    <a href="./fota.html">查看详细</a>
+
+
+                </div>
+            </div>						  <div class="product-item" onclick="window.location.href='./IVI.html';" style="cursor:pointer;">
+
+                <div class="product-item-front">
+                    <img src="../Picture/thumb_518_0_594a1bd32783d.jpg">
+                    <p>车联网</p>
+                </div>
+                <div class="product-item-opposite">
+                    <h2>车联网</h2>
+                    <p>借助资深的智能移动操作系统经验，我们为客户提供从操作系统到上层业务实现的完整解决方案。</p>
+                    <a href="./IVI.html">查看详细</a>
+
+                </div>
+            </div>				</div>
+        </div>
+    </div>
+</div>
+<!--第三屏-->
+<div class="section">
+    <div class="third">
+        <div class="second_top">
+            <h2 class="tit_h">公司新闻动态</h2>
+            <p class="tit_p">了解最新资讯，把握行业动态</p>
+        </div>
+        <div class="third_con clearfix">
+            <div class="third_L clearfix">
+                <div class="line"></div>
+                <ul class="clearfix">
+                    <li class="left"><span>2017-07-19</span><em></em></li>						 <li class="right"><em></em><span>2017-05-24</span></li>						 <li class="left"><span>2017-03-14</span><em></em></li>						 <li class="right"><em></em><span>2017-02-09</span></li>						 <li class="left"><span>2016-10-20</span><em></em></li>						 <li class="right"><em></em><span>2016-10-20</span></li>					</ul>
+            </div>
+            <div class="third_R news_information_list">
+                <ul>
+                    <li>
+                        <a href="./newsDetail/id/14.html">
+                            <img src="../Picture/thumb_132_0_596eb932d18f3.png" class="img">
+                            <div class="news_wz">
+                                <h2>步锐捷武汉办事处近日成立</h2>
+                                <p></p>
+                            </div>
+                            <span><img src="../Public/img/list_jt.png"></span>
+                        </a>
+                    </li><li>
+                    <a href="./newsDetail/id/13.html">
+                        <img src="../Picture/thumb_132_0_5923f3e1ea3a8.JPG" class="img">
+                        <div class="news_wz">
+                            <h2>奔跑吧，步锐捷</h2>
+                            <p></p>
+                        </div>
+                        <span><img src="../Public/img/list_jt.png"></span>
+                    </a>
+                </li><li>
+                    <a href="./newsDetail/id/12.html">
+                        <img src="../Picture/thumb_132_0_58c7b6f5f18a5.jpg" class="img">
+                        <div class="news_wz">
+                            <h2>女神们节日快乐</h2>
+                            <p>3.8 步锐捷恭祝女神们节日快乐~</p>
+                        </div>
+                        <span><img src="../Public/img/list_jt.png"></span>
+                    </a>
+                </li><li>
+                    <a href="./newsDetail/id/11.html">
+                        <img src="../Picture/thumb_132_0_589c229686881.jpg" class="img">
+                        <div class="news_wz">
+                            <h2>步锐捷大家庭happy New Year</h2>
+                            <p></p>
+                        </div>
+                        <span><img src="../Public/img/list_jt.png"></span>
+                    </a>
+                </li><li>
+                    <a href="./newsDetail/id/10.html">
+                        <img src="../Picture/thumb_132_0_5804a2b4135d1.jpg" class="img">
+                        <div class="news_wz">
+                            <h2>步锐捷车载应用方案成功进入市场</h2>
+                            <p>近日，东风风神、东风标致雪铁龙旗下若干款汽车上市，并且配套步锐捷车载手机端应用</p>
+                        </div>
+                        <span><img src="../Public/img/list_jt.png"></span>
+                    </a>
+                </li><li>
+                    <a href="./newsDetail/id/9.html">
+                        <img src="../Picture/thumb_132_0_58049b2bd0526.jpg" class="img">
+                        <div class="news_wz">
+                            <h2>步锐捷进入车载后装领域</h2>
+                            <p>继提供前装车联网软件方案之后，步锐捷的智能后视镜系统方案正式推出</p>
+                        </div>
+                        <span><img src="../Public/img/list_jt.png"></span>
+                    </a>
+                </li>					</ul>
+            </div>
+        </div>
+        <div class="see">
+            <a href="./newsList.html">更多新闻</a>
+        </div>
+    </div>
+    <!--footer-->
+
+    <!--footer-->
+    <div class="footerWrap footerWrapa clearfix">
+        <p>Copyright © 2016 步锐捷科技有限公司 <a href="http://www.miitbeian.gov.cn/" target="_blank">苏ICP备15008024号</a></p>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        $('.product-items .product-item:nth-child(2n)').css({
+            "float":"right",
+            "margin-right":0
+        });
+    });
+    $(function(){
+        $(window).resize(function(){
+            realH();
+        });
+        realH();
+        function realH(){
+            var $hei = $(".section").height();
+            var $heig = $(".headerWrap").outerHeight();
+            $(".first").css({
+                "height": $hei - $heig,
+                "overflow": "hidden"
+            });
+            $(".second").css({
+                "height": $hei,
+                "overflow": "hidden"
+            });
+            $(".third").css({
+                "height": $hei,
+                "overflow": "hidden"
+            });
+        }
+    });
+</script>
+
+<!--banner效果Start-->
+<script>
+    $(function(){
+        var First = $('.first'),
+            FirstWp = $('.first').find('.first-wp'),
+            FirstItem = FirstWp.find('.first-item'),
+            FirstBtn = First.find('.firstBtn'),
+            num = 0;
+        Count = FirstItem.length;
+
+        function setStyle(){
+            var FWidth = First.width();
+            var FHeight = First.height();
+
+            FirstWp.width(FWidth*Count).height(FHeight);
+            FirstItem.width(FWidth).height(FHeight);
+        };
+        setStyle();
+        $(window).resize(function(){
+            setStyle();
+        });
+
+        FirstBtn.eq(1).click(function(){
+            if(!FirstWp.is(':animated')){
+                if(num==2){
+                    num=0;
+                }else{
+                    num++;
+                }
+                textMove(num);
+                FirstWp.animate({left:-First.width()*num},400);
+
+            }
+        });
+        FirstBtn.eq(0).click(function(){
+            if(!FirstWp.is(':animated')){
+                if(num==0){
+                    num=2;
+                }else{
+                    num--;
+                }
+                textMove(num);
+                FirstWp.animate({left:-First.width()*num},400);
+
+            }
+        });
+        function textMove(n){
+            if(n==0){
+                FirstItem.eq(0).addClass('on').siblings().removeClass('on');
+            }else if(n==1){
+                FirstItem.eq(1).addClass('on').siblings().removeClass('on');
+            }else if(n==2){
+                FirstItem.eq(2).addClass('on').siblings().removeClass('on');
+            }
+        };
+    });
+</script>
+<!--banner效果End-->

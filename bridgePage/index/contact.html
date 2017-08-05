@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit">
+    <title>联系我们-南京步锐捷电子科技有限公司</title>
+    <META Name="keywords" Content="">
+    <meta name="description" content="步锐捷科技有限公司">
+    <link rel="stylesheet" href="../Public/css/default.css" />
+    <link rel="stylesheet" href="../Public/css/style.css" />
+
+
+    <link rel="stylesheet" href="/Public/css/b_style.css" />
+    <link rel="stylesheet" type="text/css" href="../Public/css/jquery.mCustomScrollbar.css"/>
+    <script src="../Public/js/jQuery.js"></script>
+    <script language="javascript"  src="../Public/js/jquery.validate.js"></script>
+    <script language="javascript"  src="../Public/js/validate_expand.js"></script>
+    <script language="javascript"  src="../Public/js/style.js"></script>
+    <script src="../Public/js/public.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            initValidator();
+        });
+        function test1()
+        {
+            var tempStr=document.getElementById('test').placeholder;
+            if(tempStr=="内  容：")
+            {
+                document.getElementById('test').placeholder="";
+            }
+        }
+        function test2()
+        {
+            var tempStr=document.getElementById('test').placeholder;
+            if(tempStr=="")
+            {
+                document.getElementById('test').placeholder="内  容：";
+            }
+        }
+    </script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=qqFgfoQLC0H7QTHwNC3N3e82aoF5VxGv"></script>
+
+    <style type="text/css">
+        html,body{height:100%;}
+        body{margin:0;overflow:auto;}
+    </style>
+</head>
+<body>
+<!--header-->
+<div class="headerWrap clearfix">
+    <div class="header">
+        <a href="/" class="logo"><img src="../Picture/2016-10-12/57fdf4f7bdd4f.png"></a>
+        <ul>
+            <li><a href="./index.html">首页</a></li>
+            <li class="w120 navBtn">
+                <a href="./whiteboard.html" class="nava">方案产品<span></span></a>
+                <div class="subnav">
+                    <a href="./whiteboard.html">电子白板</a>
+                    <a href="./signage.html">数字标牌</a>
+                    <a href="./fota.html">FOTA</a>
+                    <a href="./IVI.html">车联网</a>
+                </div>
+            </li>
+            <li><a href="./newsList.html">新闻动态</a></li>
+            <li><a href="./about.html" >关于我们</a></li>
+            <li><a href="./joinUs.html">加入我们</a></li>
+            <li><a href="./contact.html"  class="cur">联系我们</a></li>
+        </ul>
+    </div>
+</div>
+<!--地址-->
+<div class="contact clearfix">
+    <div class="contact_img">
+        <!-- <img src=" ../Public/temp/address_pic.jpg"> -->
+        <!-- <img src="../Public/img/addredd_zz.png" class="zz"> -->
+        <div style="width:98%;height:591px;border:0;font-size:12px; margin-left:1%;" id="map"></div>
+    </div>
+    <div class="address_contact">
+        <p><span class="left">电话：+86-25-86129993</span><span>网址：www.bridgetek.cn</span></p>
+        <p><span class="left">邮箱：hr@bridgetek.cn</span><span>地址：南京市雨花台区宁双路28号汇智大厦B区819</span></p>
+    </div>
+</div>
+<div class="contact_con">
+    <h2>联系我们</h2>
+    <form action="" name="form1" id="form1" method="post">
+        <ul>
+            <li>
+                <label>姓  名：</label>
+                <input type="text" value="" class="text" name="username"/>
+            </li>
+            <li>
+                <label>E-mail:</label>
+                <input type="text" value="" class="text" name="mails" /><b class="tip-error"></b>
+            </li>
+            <li>
+                <label>主  题：</label>
+                <input type="text" value="" class="text" name="zhuti"/>
+            </li>
+            <li>
+                <textarea onClick="test1()"  onblur="test2()" id="test" name="content"  placeholder="内  容：" ></textarea><b class="tip-error"></b>
+            </li>
+            <input type="submit" name="" value="提交"class="submit" />
+        </ul>
+    </form>
+</div>
+<!--提示信息弹出 S-->
+<div class="layerbg"></div>
+<div class="layel layer-sucs">
+    <img src="../Public/img/trun_icon.png" />
+    <p>提交成功</p>
+</div>
+<div class="layel layer-error">
+    <img src="../Public/img/error_icon.png" />
+    <p class="p-error">提交失败</p>
+</div>
+<!--提示信息弹出 E-->
+
+<!--footer-->
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMapOverlay();//向地图添加覆盖物
+
+    }
+    function createMap(){
+        map = new BMap.Map("map");
+        map.centerAndZoom(new BMap.Point(118.759333,31.978121),15);
+    }
+    function setMapEvent(){
+        map.disableScrollWheelZoom();
+        map.disableKeyboard();
+        map.enableDragging();
+        map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+        target.addEventListener("click",function(){
+            target.openInfoWindow(window);
+        });
+    }
+    function addMapOverlay(){
+        var markers = [
+            {content:"步锐捷科技有限公司<br/>南京市雨花台区宁双路28号汇智大厦B区819室",title:"",imageOffset: {width:-46,height:-21},position:{lat:31.978856,lng:118.759405}},
+        ];
+        for(var index = 0; index < markers.length; index++ ){
+            var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+            var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+                imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+            })});
+            var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+            var opts = {
+                width: 200,
+                title: markers[index].title,
+                enableMessage: false
+            };
+            var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+            marker.setLabel(label);
+            addClickHandler(marker,infoWindow);
+            map.addOverlay(marker);
+        };
+    }
+    //向地图添加控件
+    function addMapControl(){
+        var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(navControl);
+    }
+    var map;
+    initMap();
+</script>
+
+</html>
+<script src="../Public/js/jquery.nicescroll.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $('body').niceScroll({
+        cursorcolor: "#ccc",//#CC0071 光标颜色
+        cursoropacitymax: 1, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
+        touchbehavior: false, //使光标拖动滚动像在台式电脑触摸设备
+        cursorwidth: "5px", //像素光标的宽度
+        cursorborder: "0", //     游标边框css定义
+        cursorborderradius: "5px",//以像素为光标边界半径
+        autohidemode: true, //是否隐藏滚动条
+        enablekeyboard: true //nicescroll可以管理键盘事件
+    });
+</script>
+
+
+<!--footer-->
+<div class="footerWrap clearfix">
+    <p>Copyright © 2016 步锐捷科技有限公司 <a href="http://www.miitbeian.gov.cn/" target="_blank">苏ICP备15008024号</a></p>
+</div>
+</body>
+</html>
