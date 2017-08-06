@@ -1,5 +1,7 @@
 /**
  * Created by jiang on 17-8-6.
+ * http://www.ruanyifeng.com/blog/2017/03/ramda.html
+ * Ramda 函数库
  */
 const R = require('ramda');
 
@@ -15,24 +17,20 @@ const add = R.curry(function (x, y) {
 add(4, 3);
 add(4)(2);
 
-R.compose(Math.abs, R.add(1), R.multiply(2)(-4));
+R.compose(Math.abs, R.add(1), R.multiply(2))(-4); // 7
 R.pipe(Math.abs, R.add(1), R.multiply(2)(-4));
 
 const sumOfArr = arr => {
-    const sum = 0;
+    let sum = 0;
     arr.forEach(i => sum += i);
     return sum;
 };
 const lengthOfArr = arr => arr.length;
 
 const average = R.converge(R.divide, [sumOfArr, lengthOfArr])
-average([1, 2, 3, 4, 5, 6, 7])
-// 4
-// 相当于 28 除以 7
+average([1, 2, 3, 4, 5, 6, 7]);
 
 const toUpperCase = s => s.toUpperCase();
 const toLowerCase = s => s.toLowerCase();
 const strangeConcat = R.converge(R.concat, [toUpperCase, toLowerCase])
-strangeConcat("Yodel")
-// "YODELyodel"
-// 相当于 R.concat('YODEL', 'yodel')
+console.log(strangeConcat("Yodel"));
