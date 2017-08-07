@@ -1,3 +1,7 @@
+const log = function(doc) {
+    console.log(doc);
+};
+
 function trim(str, type) {
     switch (type) {
         case 1: return str.replace(/\s+/g, '')
@@ -75,10 +79,24 @@ function checkPwd(str) {
     return nowLv;
 }
 
-console.log(checkPwd('23292183'));
 
 function randomNumber(count) {
     return Math.random().toString(count).substring(2);
 }
+// 数组去重
+function removeRepeatArray(arr) {
+    return Array.from(new Set(arr));
+}
+//最大最小值
+function maxArr(arr) {
+    return Math.max.apply(null, arr);
+}
 
-console.log(randomNumber(10));
+function minArr() {
+    return Math.min.apply(null, arr);
+}
+
+const arr = [1,2,34,5,6,34,6,34,5];
+
+log(maxArr(arr));
+log(minArr(arr));
