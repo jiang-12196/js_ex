@@ -76,3 +76,9 @@ function checkPwd(str) {
 }
 
 console.log(checkPwd('23292183'));
+
+function randomNumber(count) {
+    return Math.random().toString(count).substring(2);
+}
+
+console.log(randomNumber(10));
