@@ -100,3 +100,12 @@ const arr = [1,2,34,5,6,34,6,34,5];
 
 log(maxArr(arr));
 log(minArr(arr));
+
+log('ass'.substr(2));
+
+String.prototype.substr = function () {
+    console.log("my prototype");
+};
+
+'aaa'.substr();
+
