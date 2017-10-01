@@ -2,7 +2,7 @@ const fs        = require('fs');
 const tesseract = require('node-tesseract');
 const gm        = require('gm');
 
-processImg('1.jpg', 'test_1.jpg')
+processImg('./captcha.png', './captcha1.png')
     .then(recognizer)
     .then(text => {
         console.log(`识别结果:${text}`);
