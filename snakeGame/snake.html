@@ -2,43 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>贪吃蛇</title>
-    <link rel="stylesheet" type="text/css" href="snake.css"/>
+    <title>snake...</title>
+    <meta name="viewport" content="width=device-width, initial-scale-1.0, maximun-scale=1.0, user-scalable=0,shrink-to-fit=no">
+    <link href="snake.css" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <h1>贪吃蛇游戏</h1>
-    <div>得分：<span id="score">0</span></div>
-    <button id="start">开始</button>
-    <button id="pause">暂停</button>
-    <div id="map"></div>
-</div>
+    <div class="snake-game"></div>
+    <div class="snake-controller">
+        <div class="snake-direction">
+            <div class="snake-up"></div>
+            <div class="snake-right"></div>
+            <div class="snake-down"></div>
+            <div class="snake-left"></div>
+        </div>
+        <input type="checkbox" class="snake-trigger" checked="checked">
+        <input type="button" class="snake-switch">
+        <div class="snake-timer">time: 300</div>
+        <div class="snake-speed">
+            <div class="snake-speed-thumb"></div>
+        </div>
+    </div>
 </body>
-
 </html>
-<script type="text/javascript" src="snake.js"></script>
-<!--<script>-->
-    <!--var map = document.getElementById('map');-->
-    <!--var rowNum = 25;-->
-    <!--var colNum = 20;-->
-    <!--var mapWidth = colNum*20+'px';-->
-    <!--var mapHeight = rowNum*20+'px';-->
-    <!--map.style.width = mapWidth;-->
-    <!--map.style.height = mapHeight;-->
-
-    <!--var arr = [];-->
-    <!--for(var i=0; i<rowNum; i++){-->
-        <!--var rowDiv = document.createElement('div');-->
-        <!--rowDiv.className = 'row';-->
-        <!--map.appendChild(rowDiv);-->
-        <!--var rowArray = [];-->
-        <!--for (var j=0; i<colNum; j++) {-->
-            <!--var colDiv = document.createElement('div');-->
-            <!--colDiv.className = 'col';-->
-            <!--rowDiv.appendChild(colDiv);-->
-            <!--rowArray.push(colDiv);-->
-        <!--}-->
-        <!--arr.push(rowArray);-->
-    <!--}-->
-
-<!--</script>-->
