@@ -26,25 +26,25 @@ export default class model {
 			unshift.call(this.snake, index); 
 			// 更新 zone
 			this.updateZone(index, "snake", "unshift"); 
-		}
+		};
 
 		this.snake.shift = () => {
 			let index = shift.call(this.snake).data; 
 			// 更新 zone
 			this.updateZone(index, undefined, "shift"); 
-		}
+		};
 
 		this.snake.push = (index) => {
 			push.call(this.snake, index); 
 			// 更新 zone
 			this.updateZone(index, "snake", "push"); 
-		}
+		};
 
 		this.snake.pop = () => {
 			let index = pop.call(this.snake).data; 
 			// 更新 zone
 			this.updateZone(index, undefined, "pop"); 
-		}
+		};
 
 		// 投食后自动更新 zone
 		Reflect.defineProperty(this, "food", {
