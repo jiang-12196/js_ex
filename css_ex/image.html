@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>image</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 200px;
+            border: 2px solid pink;
+            background-image: url("http://www.quanjing.com/image/2015index/index_08.jpg");
+            background-size: auto 100%;
+            cursor: pointer;
+
+            -webkit-animation: full 10s linear infinite alternate;
+
+            -webkit-animation-play-state: paused;
+        }
+
+        .container:hover,
+        .container:focus {
+            -webkit-animation-play-state: running;
+        }
+
+        @-webkit-keyframes full {
+            100% {
+                background-position: 100% 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container"></div>
+</body>
+</html>
