@@ -1,5 +1,3 @@
-import { inspect } from "util";
-
 if (typeof Array.isArray === 'undefined') {
     Array.isArray = function(arg) {
         return Object.prototype.toString.call(arg) === '[object Array]'
@@ -64,3 +62,25 @@ function clone(obj) {
         return obj;
     }
 }
+
+var User = {
+    count: 1,
+ 
+    getCount: function() {
+        return this.count;
+    }
+};
+console.log(User.getCount()); // what?
+var func = User.getCount;
+console.log(func()); // what?
+
+Function.prototype.bind = Function.prototype.bind || function(context) {
+    var self = this;
+    return function() {
+        return self.apply(context, arguments);
+    }
+}
+
+var func = User.getCount.bind(User);
+
+console.log(func());
