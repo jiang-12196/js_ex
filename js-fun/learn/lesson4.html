@@ -1,0 +1,57 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>lesson3</title>
+    </head>
+    <body>
+        <button>button</button>
+        <button>button2</button>
+    </body>
+    <script>
+        var nodes = document.getElementsByTagName('button');
+        for (var i = 0; i < nodes.length; i++) {
+            nodes[i].addEventListener('click', (function(i){
+                return function() {
+                    console.log('you clicked element ', i);   
+                }
+            })(i));
+        }
+
+        // 事件循环工作
+        function printing() {
+            console.log(1);
+            setTimeout(function() {console.log(2)}, 1000);
+            setTimeout(function() {console.log(3)}, 0);
+            console.log(4);
+            console.log(typeof null);
+        }
+        printing();
+        // liu览器有一个事件循环用于检查事件队列，处理延迟的事件。UI事件（例如，点击，滚动等），Ajax回调，以及提供给setTimeout()和setInterval()的回调都会依次被事件循环处理
+
+        function isPrime(number) {
+            if (typeof number !== 'number' || Number.isInteger(number)) {
+                return false;
+            }
+
+            if (number < 2) {
+                return false;
+            }
+
+            if (number === 2) {
+                return true; 
+            } else if (number % 2 === 0) {
+                return false;
+            }
+
+            var squareRoot = Math.sqrt(number);
+            for (var i = 3; i <= squareRoot; i += 2) {
+                if (number % i === 0) {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+    </script>
+</html>
