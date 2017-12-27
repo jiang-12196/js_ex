@@ -1,0 +1,10 @@
+build:
+  - name: clean
+  - name: webpack
+
+dev:
+  - name: clean
+  - name: webpack
+    watch: true
+  - name: server
+  - name: browser-sync

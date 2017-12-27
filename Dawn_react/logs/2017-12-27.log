@@ -1,0 +1,220 @@
+[E][23:14:17] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:254:10)
+    at Gunzip.Writable.write (_stream_writable.js:288:21)
+    at Gunzip.Writable.end (_stream_writable.js:552:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:596:14
+    at Promise.apply (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][23:14:17] GET / ::1 . text/html 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 43ms #6866
+[L][23:14:17] GET /-rc-/stylesheets/common.css ::1 http://localhost:40007/ text/css 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 11ms #6866
+[L][23:14:17] GET /-rc-/stylesheets/explore.css ::1 http://localhost:40007/ text/css 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 9ms #6866
+[L][23:14:17] GET /-rc-/images/path.png ::1 http://localhost:40007/-rc-/stylesheets/explore.css image/png 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 5ms #6866
+[L][23:14:17] GET /-rc-/images/folder.png ::1 http://localhost:40007/-rc-/stylesheets/explore.css image/png 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 5ms #6866
+[L][23:14:17] GET /-rc-/favicons/favicon-32x32.png ::1 http://localhost:40007/ image/png 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 9ms #6866
+[L][23:14:17] GET /-rc-/favicons/favicon-16x16.png ::1 http://localhost:40007/ image/png 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 4ms #6866
+[L][23:14:17] GET /-rc-/favicons/favicon-96x96.png ::1 http://localhost:40007/ image/png 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 4ms #6866
+[L][23:14:17] GET /-rc-/favicons/android-chrome-192x192.png ::1 http://localhost:40007/ image/png 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 4ms #6866
+[L][23:14:17] GET /-rc-/favicons/favicon-194x194.png ::1 http://localhost:40007/ image/png 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 4ms #6866
+[E][23:14:54] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:254:10)
+    at Gunzip.Writable.write (_stream_writable.js:288:21)
+    at Gunzip.Writable.end (_stream_writable.js:552:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:596:14
+    at Promise.apply (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][23:14:54] GET / ::1 . text/html 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 16ms #6866
+[L][23:14:54] GET /-rc-/stylesheets/common.css ::1 http://localhost:40007/ text/css 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 2ms #6866
+[L][23:14:54] GET /-rc-/stylesheets/explore.css ::1 http://localhost:40007/ text/css 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 2ms #6866
+[L][23:14:54] GET /-rc-/images/path.png ::1 http://localhost:40007/-rc-/stylesheets/explore.css image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 2ms #6866
+[L][23:14:54] GET /-rc-/images/folder.png ::1 http://localhost:40007/-rc-/stylesheets/explore.css image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 2ms #6866
+[E][23:14:56] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:254:10)
+    at Gunzip.Writable.write (_stream_writable.js:288:21)
+    at Gunzip.Writable.end (_stream_writable.js:552:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:596:14
+    at Promise.apply (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][23:14:56] GET /js/ ::1 http://localhost:40007/ text/html 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 13ms #6866
+[L][23:14:56] GET /-rc-/stylesheets/common.css ::1 http://localhost:40007/js/ text/css 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 3ms #6866
+[L][23:14:56] GET /-rc-/stylesheets/explore.css ::1 http://localhost:40007/js/ text/css 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 1ms #6866
+[L][23:14:56] GET /-rc-/images/path.png ::1 http://localhost:40007/-rc-/stylesheets/explore.css image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 2ms #6866
+[L][23:14:56] GET /-rc-/images/file.png ::1 http://localhost:40007/-rc-/stylesheets/explore.css image/png 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 7ms #6866
+[E][23:15:00] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:254:10)
+    at Gunzip.Writable.write (_stream_writable.js:288:21)
+    at Gunzip.Writable.end (_stream_writable.js:552:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:596:14
+    at Promise.apply (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][23:15:00] GET / ::1 http://localhost:40007/js/ text/html 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 15ms #6866
+[L][23:15:00] GET /-rc-/stylesheets/common.css ::1 http://localhost:40007/ text/css 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 3ms #6866
+[L][23:15:00] GET /-rc-/stylesheets/explore.css ::1 http://localhost:40007/ text/css 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 3ms #6866
+[L][23:15:00] GET /-rc-/images/path.png ::1 http://localhost:40007/-rc-/stylesheets/explore.css image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 4ms #6866
+[L][23:15:00] GET /-rc-/images/folder.png ::1 http://localhost:40007/-rc-/stylesheets/explore.css image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 4ms #6866
+[E][23:15:00] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:254:10)
+    at Gunzip.Writable.write (_stream_writable.js:288:21)
+    at Gunzip.Writable.end (_stream_writable.js:552:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:596:14
+    at Promise.apply (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][23:15:00] GET / ::1 http://localhost:40007/ text/html 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 15ms #6866
+[L][23:15:00] GET /-rc-/stylesheets/common.css ::1 http://localhost:40007/ text/css 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 2ms #6866
+[L][23:15:00] GET /-rc-/stylesheets/explore.css ::1 http://localhost:40007/ text/css 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 9ms #6866
+[L][23:15:00] GET /-rc-/images/path.png ::1 http://localhost:40007/-rc-/stylesheets/explore.css image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 3ms #6866
+[L][23:15:00] GET /-rc-/images/folder.png ::1 http://localhost:40007/-rc-/stylesheets/explore.css image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 2ms #6866
+[E][23:15:33] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:254:10)
+    at Gunzip.Writable.write (_stream_writable.js:288:21)
+    at Gunzip.Writable.end (_stream_writable.js:552:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:596:14
+    at Promise.apply (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][23:15:33] GET / ::1 http://localhost:40007/ text/html 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 17ms #6866
+[L][23:15:33] GET /-rc-/stylesheets/common.css ::1 http://localhost:40007/ text/css 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 3ms #6866
+[L][23:15:33] GET /-rc-/stylesheets/explore.css ::1 http://localhost:40007/ text/css 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 2ms #6866
+[L][23:15:33] GET /-rc-/images/path.png ::1 http://localhost:40007/-rc-/stylesheets/explore.css image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 4ms #6866
+[L][23:15:33] GET /-rc-/images/folder.png ::1 http://localhost:40007/-rc-/stylesheets/explore.css image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 2ms #6866
+[L][23:15:33] GET /-rc-/favicons/favicon-32x32.png ::1 http://localhost:40007/ image/png 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 1ms #6866
+[L][23:15:33] GET /-rc-/favicons/favicon-16x16.png ::1 http://localhost:40007/ image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 2ms #6866
+[L][23:15:33] GET /-rc-/favicons/favicon-96x96.png ::1 http://localhost:40007/ image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 3ms #6866
+[L][23:15:33] GET /-rc-/favicons/android-chrome-192x192.png ::1 http://localhost:40007/ image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 3ms #6866
+[L][23:15:33] GET /-rc-/favicons/favicon-194x194.png ::1 http://localhost:40007/ image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 1ms #6866
+[E][23:15:36] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:254:10)
+    at Gunzip.Writable.write (_stream_writable.js:288:21)
+    at Gunzip.Writable.end (_stream_writable.js:552:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:596:14
+    at Promise.apply (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][23:15:36] GET / ::1 http://localhost:40007/ text/html 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 16ms #6866
+[L][23:15:36] GET /-rc-/stylesheets/common.css ::1 http://localhost:40007/ text/css 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 8ms #6866
+[L][23:15:36] GET /-rc-/stylesheets/explore.css ::1 http://localhost:40007/ text/css 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 3ms #6866
+[L][23:15:36] GET /-rc-/images/folder.png ::1 http://localhost:40007/-rc-/stylesheets/explore.css image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 2ms #6866
+[L][23:15:36] GET /-rc-/images/path.png ::1 http://localhost:40007/-rc-/stylesheets/explore.css image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 2ms #6866
+[L][23:15:36] GET /-rc-/favicons/favicon-32x32.png ::1 http://localhost:40007/ image/png 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 2ms #6866
+[L][23:15:36] GET /-rc-/favicons/favicon-16x16.png ::1 http://localhost:40007/ image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 3ms #6866
+[L][23:15:36] GET /-rc-/favicons/favicon-96x96.png ::1 http://localhost:40007/ image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 1ms #6866
+[L][23:15:36] GET /-rc-/favicons/android-chrome-192x192.png ::1 http://localhost:40007/ image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 1ms #6866
+[L][23:15:36] GET /-rc-/favicons/favicon-194x194.png ::1 http://localhost:40007/ image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 1ms #6866
+[E][23:15:37] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:254:10)
+    at Gunzip.Writable.write (_stream_writable.js:288:21)
+    at Gunzip.Writable.end (_stream_writable.js:552:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:596:14
+    at Promise.apply (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][23:15:37] GET / ::1 http://localhost:40007/ text/html 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 24ms #6866
+[L][23:15:37] GET /-rc-/stylesheets/common.css ::1 http://localhost:40007/ text/css 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 4ms #6866
+[L][23:15:37] GET /-rc-/stylesheets/explore.css ::1 http://localhost:40007/ text/css 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 1ms #6866
+[L][23:15:37] GET /-rc-/favicons/favicon-32x32.png ::1 http://localhost:40007/ image/png 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 6ms #6866
+[L][23:15:37] GET /-rc-/favicons/favicon-16x16.png ::1 http://localhost:40007/ image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 1ms #6866
+[L][23:15:37] GET /-rc-/favicons/favicon-96x96.png ::1 http://localhost:40007/ image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 3ms #6866
+[L][23:15:37] GET /-rc-/favicons/android-chrome-192x192.png ::1 http://localhost:40007/ image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 2ms #6866
+[L][23:15:37] GET /-rc-/favicons/favicon-194x194.png ::1 http://localhost:40007/ image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 2ms #6866
+[E][23:15:38] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:254:10)
+    at Gunzip.Writable.write (_stream_writable.js:288:21)
+    at Gunzip.Writable.end (_stream_writable.js:552:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:596:14
+    at Promise.apply (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][23:15:38] GET / ::1 http://localhost:40007/ text/html 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 9ms #6866
+[L][23:15:38] GET /-rc-/stylesheets/common.css ::1 http://localhost:40007/ text/css 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 3ms #6866
+[L][23:15:38] GET /-rc-/stylesheets/explore.css ::1 http://localhost:40007/ text/css 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 3ms #6866
+[L][23:15:38] GET /-rc-/favicons/favicon-32x32.png ::1 http://localhost:40007/ image/png 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 2ms #6866
+[L][23:15:38] GET /-rc-/favicons/favicon-16x16.png ::1 http://localhost:40007/ image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 1ms #6866
+[L][23:15:38] GET /-rc-/favicons/favicon-96x96.png ::1 http://localhost:40007/ image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 1ms #6866
+[L][23:15:38] GET /-rc-/favicons/android-chrome-192x192.png ::1 http://localhost:40007/ image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 3ms #6866
+[L][23:15:38] GET /-rc-/favicons/favicon-194x194.png ::1 http://localhost:40007/ image/png 304 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 2ms #6866
+[E][23:15:49] Invalid non-string/buffer chunk
+TypeError: Invalid non-string/buffer chunk
+    at validChunk (_stream_writable.js:254:10)
+    at Gunzip.Writable.write (_stream_writable.js:288:21)
+    at Gunzip.Writable.end (_stream_writable.js:552:10)
+    at zlibBuffer (zlib.js:100:10)
+    at zlib.js:596:14
+    at Promise.apply (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1185:26)
+    at Promise.promise.promiseDispatch (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:808:41)
+    at /home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:1411:14
+    at runSingle (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:137:13)
+    at flush (/home/jiang/code/Dawn_react/node_modules/_q@1.5.1@q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+
+[L][23:15:49] GET /index.html ::1 . text/html 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 33ms #7412
+[L][23:15:49] GET /js/common.js ::1 http://localhost:34307/ application/x-javascript 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 5ms #7412
+[L][23:15:49] GET /js/index.js ::1 http://localhost:34307/ application/x-javascript 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 72ms #7412
+[L][23:15:49] GET /favicon.ico ::1 http://localhost:34307/ image/x-icon 200 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36" 6ms #7412
