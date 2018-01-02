@@ -1,0 +1,33 @@
+:root {
+    --back-img: 'https://user-images.githubusercontent.com/8554143/34239266-232bdfc0-e641-11e7-8792-408782aaa78e.png';
+}
+
+.pic {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    text-align: center;
+    font-size: 42px;
+    line-height: 420px;
+    float: left;
+    background-image: url('https://user-images.githubusercontent.com/8554143/34239266-232bdfc0-e641-11e7-8792-408782aaa78e.png');
+    background-size: cover;
+}
+
+.pic1 {
+    background-image: url('https://user-images.githubusercontent.com/8554143/34239266-232bdfc0-e641-11e7-8792-408782aaa78e.png'), linear-gradient(#f00, #f00);
+    background-blend-mode: lighten;
+    background-size: cover;
+}
+
+.pic2 {
+    background-image: url('https://user-images.githubusercontent.com/8554143/34239266-232bdfc0-e641-11e7-8792-408782aaa78e.png'), linear-gradient(#333, #333);
+    background-blend-mode: lighten;
+    background-size: cover;
+}
+
+.pic3 {
+    background-image: url('https://user-images.githubusercontent.com/8554143/34239266-232bdfc0-e641-11e7-8792-408782aaa78e.png'), linear-gradient(#f11, #fff);;
+    background-blend-mode: lighten;
+    background-size: cover;
+}
