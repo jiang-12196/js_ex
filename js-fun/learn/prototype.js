@@ -22,3 +22,11 @@ SubType.prototype.getSubValue = function() {
 var instance = new SubType();
 
 console.log(instance.getSuperValue());
+
+
+// function A() {} has a protoType  ---> protoType Object
+
+// new A() has a __proto__ ---> protoType Object
+
+// protoType Object has a constructor ---> function A()
+
