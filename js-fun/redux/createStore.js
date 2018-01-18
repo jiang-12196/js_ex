@@ -1,3 +1,5 @@
+const combineReducers  = require('./combineReducers');
+
 const createStore = (reducer) => {
     let state;
     let listeners = [];
@@ -44,6 +46,8 @@ const reducer = (state = {
     }
 }
 
+const reducers = combineReducers({ reducer });
+
 const action = (message) => {
     return {
         type: 'UPDATE_GROUP_NAME_SUCCESS',
@@ -51,7 +55,7 @@ const action = (message) => {
     }
 }
 
-const store = createStore(reducer);
+const store = createStore(reducers);
 
 const { getState, dispatch, subscribe } = store;
 
