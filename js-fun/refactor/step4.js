@@ -21,18 +21,21 @@ function getObjectValues(object) {
     return Object.keys(object).map(key => object[key]);
 }
 
-function getCollectionWeight(collection) {
-    let collectionValues;
+function getCollectValues(collection) {
     if (collection instanceof Array) {
-        collectionValues = collection;
+        return collection;
     } else if (collection instanceof Map) {
-        collectionValues = getMapValues(collection);
-    } else {
-        collectionValues = getObjectValues(collection);
+        return getMapValues(collection);
     }
-    return collectionValues.reduce((sum, item) => {
-        return sum + getWeightByType(item);
-    }, 0);
+    return getObjectValues(collection);
+}
+
+function reduceWeightSum(sum, item) {
+    return sum + getWeightByType(item);
+} 
+
+function getCollectionWeight(collection) {
+    return getCollectValues(collection).reduce(reduceWeightSum, 0);
 }
 
 let myArray = [null, {}, 15];
@@ -46,3 +49,10 @@ console.log(getCollectionWeight(myArray));
 console.log(getCollectionWeight(myMap));
 
 console.log(getCollectionWeight(myObject));
+
+
+// getCollectionWeight => getCollectValues + reduceWeightSum
+
+// getCollectValues => getMapValue + getObjectValue
+
+// reduceWeightSum => getWeightByType
