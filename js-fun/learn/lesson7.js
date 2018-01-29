@@ -3,6 +3,10 @@ const a = {
     toString: function() {
         var b = a.i++;
         return b;
+    },
+    valueOf: function() {
+        var b = a.i++;
+        return b;
     }
 }
 
@@ -22,3 +26,8 @@ Object.defineProperty(window, 'a', {
 if (window.a === 1 && window.a === 2 && window.a === 3) {
     console.log("great 2");
 }
+
+
+// i++ 返回 i
+
+// ++i 返回 i+1
