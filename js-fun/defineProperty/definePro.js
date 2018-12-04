@@ -153,3 +153,28 @@ input.addEventListener('keyup', function(e) {
 });
 
 demo.$watch('text', str => (p.innerHTML = str));
+
+// const input = document.getElementById('input');
+// const p = document.getElementById('p');
+
+// new Proxy 使用方法
+const obj = {};
+
+const newObj = new Proxy(obj, {
+  get: function(target, key, receiver) {
+    console.log(`getting ${key}!`);
+    return Reflect.get(target, key, receiver);
+  },
+  set: function(target, key, value, receiver) {
+    console.log(target, key, value, receiver);
+    if (key === 'text') {
+      input.value = value;
+      p.innerHTML = value;
+    }
+    return Reflect.set(target, key, value, receiver);
+  },
+});
+
+input.addEventListener('keyup', function(e) {
+  newObj.text = e.target.value;
+});
